@@ -7,10 +7,10 @@ import createOrder from "../controller/createOrder.js";
 import updateOrderStatus from "../controller/udateOrderStatus.js";
 import deleteOrder from "../controller/deleteOrder.js";
 
-router.get("/", getOrders);
-router.get("/:id", getOrder);
-router.post("/create", createOrder);
-router.put("/update/:id", updateOrderStatus);
-router.delete("/delete/:id", deleteOrder);
+router.get("/orders", getOrders);
+router.get("/orders/:id", getOrder);
+router.post("/orders", createOrder);
+router.put("/orders/:id", updateOrderStatus);
+router.delete("/orders/:id", deleteOrder);
 
 export default router;
